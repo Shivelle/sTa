@@ -1,0 +1,129 @@
+:root {
+  --base: #292B44;
+  --spacing: 10px;
+  --blur: 0px;
+}
+
+body {
+	background: red;
+  	background: var(--base);
+  	filter: blur(var(--blur));
+  	height: 3000px;
+  	color: #fff;
+}
+
+.scroll-line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 16px;
+    background: #EE6352;
+    transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1.666) width;
+    z-index: 999;
+}
+
+#header {
+	height: 100vh;
+	text-align: center;
+	z-index: -1;
+	margin: 0;
+}
+
+h1 {
+	z-index: 5;
+  font-size: 3em;
+	margin: 100px auto;
+}
+
+
+/* --- important --- */
+#slides{
+  position: relative;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.showing{
+  opacity: 1;
+  z-index: 2;
+}
+/* --- /important --- */
+
+.slide{
+  background-size: cover;
+  background-position: center;
+  background-color: var(--base);
+  background-blend-mode: multiply;
+  font-size: 40px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #333;
+  color: #fff;
+}
+/*
+.slide:nth-of-type(1){
+  background-image: url('https://static.pexels.com/photos/39068/crocodile-eye-animal-nature-39068.jpeg');
+}
+.slide:nth-of-type(2){
+  background-image: url('https://static.pexels.com/photos/70355/vervet-monkey-female-animal-70355.jpeg');
+}
+.slide:nth-of-type(3){
+  background-image: url('https://static.pexels.com/photos/119783/pexels-photo-119783.jpeg');
+}
+.slide:nth-of-type(4){
+  background-image: url('https://static.pexels.com/photos/9322/africa-animals-zoo-tiger.jpg');
+}
+
+.slide:nth-of-type(5){
+  background-image: url('https://static.pexels.com/photos/69396/crocodile-animal-eye-alligator-69396.jpeg');
+}
+
+.slide:nth-of-type(6){
+  background-image: url('https://static.pexels.com/photos/121760/pexels-photo-121760.jpeg');
+}
+
+.slide:nth-of-type(7){
+  background-image: url('https://static.pexels.com/photos/169359/pexels-photo-169359.jpeg');
+}
+
+.slide:nth-of-type(8){
+  background-image: url('https://static.pexels.com/photos/90846/pexels-photo-90846.jpeg');
+}
+
+.slide:nth-of-type(9){
+  background-image: url('https://static.pexels.com/photos/45843/snake-python-animal-scale-45843.jpeg');
+}
+
+.slide:nth-of-type(10){
+  background-image: url('https://static.pexels.com/photos/146100/pexels-photo-146100.jpeg');
+}
+
+.slide:nth-of-type(11){
+  background-image: url('https://static.pexels.com/photos/468052/pexels-photo-468052.jpeg');
+}
+
+.slide:nth-of-type(12){
+  background-image: url('https://static.pexels.com/photos/87316/pexels-photo-87316.jpeg');
+}
+*/
+.slide {
+  background-size: cover;
+  background-position: center;
+}
