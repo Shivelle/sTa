@@ -77,7 +77,7 @@ h1 {
   background: #333;
   color: #fff;
 }
-/*
+
 .slide:nth-of-type(1){
   background-image: url('https://static.pexels.com/photos/39068/crocodile-eye-animal-nature-39068.jpeg');
 }
@@ -122,8 +122,23 @@ h1 {
 .slide:nth-of-type(12){
   background-image: url('https://static.pexels.com/photos/87316/pexels-photo-87316.jpeg');
 }
-*/
+
 .slide {
   background-size: cover;
   background-position: center;
+}
+
+.subtitle {
+  margin-top: ;
+  font-size: 16px;
+}
+
+.slide-txt {
+  margin-top: 10vh;
+  color: #EE6352;
+}
+
+h2 {
+  font-size: 60px;
+  text-transform: uppercase;
 }

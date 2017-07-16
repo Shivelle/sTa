@@ -1,7 +1,7 @@
     const scrollLine    = document.querySelector('.scroll-line');
     const slides        = document.querySelectorAll('#slides .slide');
     let currentSlide    = 0;
-    const slideInterval = setInterval(nextSlide,2000);
+    const slideInterval = setInterval(nextSlide, 2000);
     const animals       = [
   {
     name: 'Crocodile',
@@ -66,10 +66,7 @@
 
   ]; 
 
-
   // functions
-
-
     function fillScrollLine() {
       const windowHeight      = window.innerHeight;
       const fullHeight        = document.body.clientHeight;
@@ -77,8 +74,6 @@
       const percentScrolled   = (scrolled / (fullHeight - windowHeight)) * 100;
       scrollLine.style.width  = `${percentScrolled}%`;
     }
-
-
 
     // slider
     function nextSlide() {
@@ -88,42 +83,8 @@
           console.log('hello'); 
     }
 
-
-// ===============================================
-
-    
-/*
-
-    function loadAnimal(i) {
-      for (let animal of animals) {
-        let animalName = animals.name; 
-        let animalText = animals.paragraph;
-
-        // slides[currentSlide].innerHTML = `<img src="${animals.url}%">`; 
-        slides[currentSlide].innerHTML = `${animals.name}%`; 
-
-
-
-
-        slides[currentSlide].className = 'slide';
-        currentSlide                   = (currentSlide+1)%slides.length;
-      };  
-      console.log('finished func'); 
-    }*/
-
-
-/*
-              <a href="${bookmark.link}" class="bookmark" data-id="${i}" target="_blank">
-            <div class="img" style="background-image:url('${bookmark.image}')"></div>
-            <div class="title">${bookmark.title}</div>
-            <span class="glyphicon glyphicon-remove"></span>
-          </a>*/
-
-
-
     // event listeners
     window.addEventListener('scroll', debounce(fillScrollLine));
-
     
     // debounce
     function debounce(func, wait = 15, immediate) {
@@ -140,9 +101,3 @@
         if (callNow) func.apply(context, args);
       };
     }
-
-
-
-
-
-

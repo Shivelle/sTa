@@ -1,0 +1,4 @@
+- get slider working
+- improve page load
+- witch do arr mode
+- get content from arr for postings
